@@ -1,17 +1,17 @@
 import React from 'react';
 import {BrowserRouter as Router,Route,Switch,Redirect} from 'react-router-dom';
 import './App.css';
-import Home from './Components/Home';
-import Login from './Components/Login';
-import Signup from './Components/Signup';
-import Appointment from './Components/Appointment';
-import About from './Components/About';
-import Service from './Components/Service';
-import Contact from './Components/Contact';
-import Ourclient from './Components/Ourclient';
-import Footer from './Components/Footer';
-import Calculator from './Components/Calculator';
-import Schedule from './Components/Schedule';
+import Home from './components/Home';
+import login from './components/login';
+import Signup from './components/Signup';
+import Appointment from './components/Appointment';
+import About from './components/About';
+import Service from './components/Service';
+import Contact from './components/Contact';
+import Ourclient from './components/Ourclient';
+import Footer from './components/Footer';
+import Calculator from './components/Calculator';
+import Schedule from './components/Schedule';
 
 // import { Route, Switch,  } from 'react-router-dom';
 
@@ -39,7 +39,7 @@ function App() {
       <Router>
       <Switch>
       <Route exact path='/home' component={Home}></Route> 
-      <Route exact path='/signin' component={Login}></Route> 
+      {/* <Route exact path='/signin' component={login}></Route>  */}
       <Route exact path='/signup' component={Signup}></Route>
       <Route exact path='/appt' component={Appointment}></Route>
       <Route exact path='/about' component={About}></Route> 
